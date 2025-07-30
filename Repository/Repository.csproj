@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CulturalShare.Repositories" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DomainEntity\DomainEntity.csproj" />
+	</ItemGroup>
+
+</Project>

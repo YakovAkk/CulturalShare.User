@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -9,8 +9,32 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
+	  <PackageReference Include="AspNetCore.HealthChecks.NpgSql" />
+	  <PackageReference Include="AspNetCore.HealthChecks.UI.Client" />
+	  <PackageReference Include="culturalshare.common.helper" />
+	  <PackageReference Include="CulturalShare.Foundation.AspNetCore.Extensions" />
+	  <PackageReference Include="CulturalShare.Foundation.Authorization" />
+	  <PackageReference Include="CulturalShare.Foundation.EnvironmentHelper" />
+	  <PackageReference Include="CulturalShare.Protos" />
+	  <PackageReference Include="MediatR" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+	  <PackageReference Include="Microsoft.AspNetCore.HeaderPropagation" />
+	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
+	  <PackageReference Include="Newtonsoft.Json" />
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Dependency.Infranstructure\Dependency.Infrastructure.csproj" />
+		<ProjectReference Include="..\Postgres.Infrastructure\Postgres.Infrastructure.csproj" />
+		<ProjectReference Include="..\Repositories.Infrastructure\Repositories.Infrastructure.csproj" />
+		<ProjectReference Include="..\Service\Service.csproj" />
+	</ItemGroup>
 
 </Project>
