@@ -14,7 +14,7 @@
 	  <PackageReference Include="culturalshare.common.helper" />
 	  <PackageReference Include="CulturalShare.Foundation.AspNetCore.Extensions" />
 	  <PackageReference Include="CulturalShare.Foundation.Authorization" />
-	  <PackageReference Include="CulturalShare.Foundation.EntironmentHelper" />
+	  <PackageReference Include="CulturalShare.Foundation.EnvironmentHelper" />
 	  <PackageReference Include="CulturalShare.Protos" />
 	  <PackageReference Include="MediatR" />
 	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
@@ -31,7 +31,7 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Dependency.Infranstructure\Dependency.Infranstructure.csproj" />
+		<ProjectReference Include="..\Dependency.Infranstructure\Dependency.Infrastructure.csproj" />
 		<ProjectReference Include="..\Postgres.Infrastructure\Postgres.Infrastructure.csproj" />
 		<ProjectReference Include="..\Repositories.Infrastructure\Repositories.Infrastructure.csproj" />
 		<ProjectReference Include="..\Service\Service.csproj" />

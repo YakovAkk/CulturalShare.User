@@ -41,10 +41,10 @@ public class UserService : IUserService
             return Error.Conflict("You cannot follow yourself.");
         }
 
-        var userExists = _userRepository.GetAll().Any(u => u.Id == userId);
-        var restrictedUserExists = _userRepository.GetAll().Any(u => u.Id == request.FolloweeId);
+        var userExists = await _userRepository.GetAll().AnyAsync(u => u.Id == userId);
+        var restrictedUserExists = await _userRepository.GetAll().AnyAsync(u => u.Id == request.FolloweeId);
 
-        if (!userExists && !restrictedUserExists)
+        if (!userExists || !restrictedUserExists)
         {
             return Error.Conflict("User doesn't exist.");
         }
@@ -117,10 +117,10 @@ public class UserService : IUserService
             return Error.Conflict("You cannot restrict yourself.");
         }
 
-        var userExists = _userRepository.GetAll().Any(u => u.Id == userId);
-        var restrictedUserExists = _userRepository.GetAll().Any(u => u.Id == request.UserIdToRestrict);
+        var userExists = await _userRepository.GetAll().AnyAsync(u => u.Id == userId);
+        var restrictedUserExists = await _userRepository.GetAll().AnyAsync(u => u.Id == request.UserIdToRestrict);
 
-        if (!userExists && !restrictedUserExists)
+        if (!userExists || !restrictedUserExists)
         {
             return Error.Conflict("User doesn't exist.");
         }
@@ -175,7 +175,7 @@ public class UserService : IUserService
     {
         _logger.LogInformation($"{nameof(ToggleNotificationsAsync)} request received");
 
-        var userExists = _userRepository.GetAll().Any(u => u.Id == userId);
+        var userExists = await _userRepository.GetAll().AnyAsync(u => u.Id == userId);
 
         if (!userExists)
         {

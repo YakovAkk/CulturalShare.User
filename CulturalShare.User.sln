@@ -30,7 +30,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainEntity", "DomainEntity\DomainEntity.csproj", "{B29853CF-1583-4764-84FC-D06B58AE7515}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency.Infranstructure", "Dependency.Infranstructure\Dependency.Infranstructure.csproj", "{85224E2E-0089-4823-BA5C-4C4EFD789E1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency.Infrastructure", "Dependency.Infranstructure\Dependency.Infrastructure.csproj", "{85224E2E-0089-4823-BA5C-4C4EFD789E1C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgres.Infrastructure", "Postgres.Infrastructure\Postgres.Infrastructure.csproj", "{4CCAF71A-BB00-47E4-BC25-8977CE37E17C}"
 EndProject

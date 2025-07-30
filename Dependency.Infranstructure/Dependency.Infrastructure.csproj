@@ -15,6 +15,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CulturalShare.Foundation.EnvironmentHelper" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
 		<PackageReference Include="Serilog" />
 		<PackageReference Include="Serilog.AspNetCore" />
@@ -28,7 +29,6 @@
 		<PackageReference Include="culturalshare.common.helper" />
 		<PackageReference Include="CulturalShare.Foundation.AspNetCore.Extensions" />
 		<PackageReference Include="CulturalShare.Foundation.Authorization" />
-		<PackageReference Include="CulturalShare.Foundation.EntironmentHelper" />
 		<PackageReference Include="CulturalShare.Protos" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
 		<PackageReference Include="Microsoft.AspNetCore.HeaderPropagation" />

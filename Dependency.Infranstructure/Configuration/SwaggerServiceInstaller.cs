@@ -27,6 +27,6 @@ public class SwaggerServiceInstaller : IServiceInstaller
             c.IncludeXmlComments(xmlPath);
         });
 
-        logger.Information($"{nameof(HealthCheckServiceInstaller)} installed.");
+        logger.Information($"{nameof(SwaggerServiceInstaller)} installed.");
     }
 }

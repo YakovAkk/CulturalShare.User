@@ -1,4 +1,4 @@
-﻿using CulturalShare.Foundation.EntironmentHelper.EnvHelpers;
+﻿using CulturalShare.Foundation.EnvironmentHelper.EnvHelpers;
 using Dependency.Infranstructure.Configuration.Base;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,7 +15,6 @@ public class HealthCheckServiceInstaller : IServiceInstaller
         builder.Services.AddHealthChecks()
            .AddNpgSql(sortOutCredentialsHelper.GetPostgresConnectionString(), name: "UserDB");
 
-        logger.Information($"{sortOutCredentialsHelper.GetPostgresConnectionString()} PostgresConnectionString.");
         logger.Information($"{nameof(HealthCheckServiceInstaller)} installed.");
     }
 }

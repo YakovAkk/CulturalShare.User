@@ -1,6 +1,5 @@
 ﻿using AuthenticationBackProto;
-using CulturalShare.Foundation.AspNetCore.Extensions.Extensions;
-using CulturalShare.Foundation.EntironmentHelper.Configurations;
+using CulturalShare.Foundation.EnvironmentHelper.Configurations;
 using ErrorOr;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;

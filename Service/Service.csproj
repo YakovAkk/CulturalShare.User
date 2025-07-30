@@ -9,7 +9,7 @@
 	<ItemGroup>
 		<PackageReference Include="CulturalShare.Common.Helper" />
 		<PackageReference Include="CulturalShare.Foundation.AspNetCore.Extensions" />
-		<PackageReference Include="culturalshare.foundation.entironmenthelper" />
+		<PackageReference Include="CulturalShare.Foundation.EnvironmentHelper" />
 		<PackageReference Include="CulturalShare.Interaction.Microservices" />
 		<PackageReference Include="CulturalShare.Protos" />
 		<PackageReference Include="CultureShare.Foundation.Exceptions" />
